@@ -23,11 +23,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__magnifier {
@@ -44,8 +44,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .promo__img {
@@ -93,30 +93,30 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .offers__up__all {
   height: 260px;
   max-width: 360px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .offers__up__all:not(:last-child) {
@@ -128,15 +128,15 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 30px;
   height: 180px;
   background-image: url(../img/offer__4.jpg);
@@ -188,10 +188,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .products__img {
@@ -203,11 +203,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -278,11 +278,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 8px 14px;
   background: none;
   border: 1px solid #ffffff;
@@ -302,11 +302,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .features__descr:not(:last-child) {
@@ -334,19 +334,31 @@ a {
 
 .feedback {
   height: 448px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(244, 244, 244, 0.7)), to(rgba(244, 244, 244, 0.7))), url(../img/bg_feedback.png);
-  background: linear-gradient(to top, rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/bg_feedback.png);
+  background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(244, 244, 244, 0.7)),
+      to(rgba(244, 244, 244, 0.7))
+    ),
+    url(../img/bg_feedback.png);
+  background: linear-gradient(
+      to top,
+      rgba(244, 244, 244, 0.7),
+      rgba(244, 244, 244, 0.7)
+    ),
+    url(../img/bg_feedback.png);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   text-align: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .feedback__card {
@@ -413,11 +425,11 @@ a {
   display: flex;
   background: #222222;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__text {
@@ -425,5 +437,29 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #fbfbfb;
+}
+
+.facebook__bg:hover {
+  fill: #f16d7f;
+}
+
+.facebook__bg:hover + .facebook__icon {
+  fill: #ffffff;
+}
+
+.facebook__icon:hover {
+  fill: #ffffff;
+}
+
+.facebook__icon:hover + .facebook__bg {
+  fill: #f16d7f;
+}
+
+.instagram__bg:hover {
+  fill: #f16d7f;
+}
+
+.instagram__bg:hover + .instagram__icon {
+  fill: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

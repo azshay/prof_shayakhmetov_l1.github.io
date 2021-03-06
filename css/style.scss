@@ -331,3 +331,27 @@ a {
     color: #fbfbfb;
   }
 }
+
+.facebook {
+  &__bg:hover {
+    fill: $pink;
+  }
+  &__bg:hover + &__icon {
+    fill: $white;
+  }
+  &__icon:hover {
+    fill: $white;
+  }
+  &__icon:hover + &__bg {
+    fill: $pink;
+  }
+}
+
+.instagram {
+  &__bg:hover {
+    fill: $pink;
+  }
+  &__bg:hover + &__icon {
+    fill: $white;
+  }
+}
