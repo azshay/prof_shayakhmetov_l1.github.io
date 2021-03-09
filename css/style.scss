@@ -38,6 +38,8 @@ a {
   background: #f1e4e6;
   display: flex;
   align-items: center;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
   &__img {
     width: 50%;
   }
@@ -278,7 +280,7 @@ a {
     margin-bottom: 30px;
   }
   &__form {
-    margin: 0 auto;
+    margin-right: 110px;
     &__h3 {
       font-weight: bold;
       font-size: 24px;
@@ -315,6 +317,11 @@ a {
     position: absolute;
     left: 249px;
     padding-left: 15px;
+    // ХЗ, СТРАННО СМОТРИТСЯ ЕЙ БОГУ
+    // &:hover {
+    //   background: $white;
+    //   color: $pink;
+    // }
   }
 }
 
@@ -332,28 +339,11 @@ a {
   }
 }
 
-.facebook {
-  &__bg:hover {
+.sicons {
+  &:hover &__bg {
     fill: $pink;
   }
-  &__bg:hover + &__icon {
-    fill: $white;
-  }
-  &__icon:hover {
-    fill: $white;
-  }
-  &__icon:hover + &__bg {
-    fill: $pink;
-  }
-}
-
-.instagram {
-  &__bg:hover {
-    fill: $pink;
-  }
-  &__bg:hover + &__icon {
+  &:hover &__icon {
     fill: $white;
   }
 }
-
-// test
