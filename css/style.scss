@@ -163,6 +163,11 @@ a {
       &:hover {
         opacity: 1;
       }
+      &__a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -173,11 +178,17 @@ a {
     &__texts {
       margin-left: 16px;
       margin-right: 16px;
+      margin-top: 26px;
     }
     &__heading {
-      margin-top: 26px;
       font-size: 13px;
       line-height: 16px;
+      text-decoration: none;
+      &__a {
+        &:visited {
+          color: #000;
+        }
+      }
     }
     &__text {
       margin-top: 13px;
@@ -221,6 +232,9 @@ a {
   border: 1px solid $white;
   text-align: center;
   outline: none;
+  &__a {
+    z-index: 2;
+  }
 }
 
 .wrap__text {
@@ -298,6 +312,7 @@ a {
   }
 
   &__input {
+    outline: none;
     border: none;
     padding-top: 15px;
     padding-left: 22px;
@@ -317,11 +332,10 @@ a {
     position: absolute;
     left: 249px;
     padding-left: 15px;
-    // ХЗ, СТРАННО СМОТРИТСЯ ЕЙ БОГУ
-    // &:hover {
-    //   background: $white;
-    //   color: $pink;
-    // }
+    &:hover {
+      background: $white;
+      color: $pink;
+    }
   }
 }
 
@@ -345,5 +359,124 @@ a {
   }
   &:hover &__icon {
     fill: $white;
+  }
+}
+
+//CATALOG
+
+.catalog__menu {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #f8f3f4;
+  display: flex;
+  justify-content: space-between;
+  &__heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+  }
+  &__right {
+    display: flex;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    &__selected {
+      font-weight: 700;
+      color: $pink;
+    }
+  }
+}
+
+.assortment {
+  &__menu {
+    display: flex;
+    padding-top: 51px;
+    padding-bottom: 64px;
+  }
+  &__filter {
+    &__summary {
+      padding-left: 11px;
+      outline: none;
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::after {
+        content: url(../img/assortment__filter.svg);
+        padding-left: 11px;
+      }
+    }
+
+    &[open] > &__summary::after {
+      content: url(../img/assortment__filter__active.svg);
+      color: $pink;
+    }
+    &[open] &__summary {
+      color: $pink;
+    }
+  }
+  &__settings {
+    margin-left: 276px;
+    display: flex;
+    &__det {
+      margin-left: 28px;
+    }
+    &__summary {
+      padding-left: 11px;
+      outline: none;
+      display: block;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6f6e6e;
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::after {
+        content: url(../img/assortment__settings.svg);
+        padding-left: 11px;
+      }
+    }
+  }
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__page {
+    margin-top: 18px;
+    margin-bottom: 96px;
+    max-width: 283px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    border: 1px solid rgba(235, 235, 235, 1);
+    &__left,
+    &__right {
+      border: none;
+      background: none;
+      outline: none;
+    }
+  }
+  &__pages {
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(196, 196, 196, 1);
+    &__selected {
+      color: $pink;
+    }
   }
 }
