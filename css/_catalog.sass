@@ -1,0 +1,108 @@
+.catalog__menu
+    padding-top: 60px
+    padding-bottom: 60px
+    background: #f8f3f4
+    display: flex
+    justify-content: space-between
+    &__heading
+        font-size: 24px
+        line-height: 29px
+        color: #f16d7f
+
+    &__right
+        display: flex
+
+    &__text, &__text__del
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+    &__text
+        &:hover
+            margin-top: -3px
+        &__selected
+            font-weight: 700
+            color: $pink
+
+.assortment
+    &__menu
+        display: flex
+        padding-top: 51px
+        padding-bottom: 64px
+
+    &__filter
+        &__summary
+            padding-left: 11px
+            outline: none
+            display: block
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            color: #000000
+            &::-webkit-details-marker
+                display: none
+
+            &::after
+                content: url(../img/assortment__filter.svg)
+                padding-left: 11px
+
+        [open] > &__summary::after
+            content: url(../img/assortment__filter__active.svg)
+            color: $pink
+
+        &[open] &__summary
+            color: $pink
+
+    &__settings
+        margin-left: 276px
+        display: flex
+        &__det
+            margin-left: 28px
+
+        &__summary
+            padding-left: 11px
+            outline: none
+            display: block
+            font-size: 14px
+            line-height: 17px
+            color: #6f6e6e
+            &::-webkit-details-marker
+                display: none
+
+            &::after
+                content: url(../img/assortment__settings.svg)
+                padding-left: 11px
+
+    &__products
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__page
+        margin-top: 18px
+        margin-bottom: 96px
+        max-width: 283px
+        margin-right: auto
+        margin-left: auto
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 15px
+        border: 1px solid rgba(235, 235, 235, 1)
+        &__left,
+        &__right
+            border: none
+            background: none
+            outline: none
+
+    &__pages
+        border: none
+        background: none
+        outline: none
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: rgba(196, 196, 196, 1)
+        &__selected
+            color: $pink
